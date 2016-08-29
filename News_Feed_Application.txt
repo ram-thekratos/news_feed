@@ -40,11 +40,13 @@ root directory - directory in which the code will be checked out / placed for de
 Steps to run the application on a developer's laptop:
 
 Required tools: 
+Git bash
 Command prompt or console or Cygwin terminal
 Node, accessible from command prompt or console or Cygwin terminal
 
 Instructions:
-1.  Download and extract "news_feed.zip" file on the laptop.
+1.  Check out the application code from the below location using GIT bash:
+    https://github.com/ram-thekratos/news_feed.git
 2.  Launch command prompt or console or Cygwin terminal.
 3.  'cd' to the directory in which the ZIP file is extracted.
 4.  Run the web server using the following command 
