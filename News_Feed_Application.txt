@@ -1,0 +1,55 @@
+Business problem:
+
+Develop a Facebook style news feed which will refresh content every "x" seconds from the back end server.
+
+Technical solution:
+
+Build a HTML which has a container to which event items will be added dynamically based on the response / updates provided by the back-end server.
+
+Technical implementation details:
+
+The news feed application is built using Angular JS on the client-side and uses a mock AJAX service (invoked after "x" seconds, as mentioned in the business problem) which will return the new event that has happened after the user has logged-in.
+
+The current refresh interval is set to 30 seconds for this POC. This is configurable and can be modified based on the business needs. 
+
+There are custom directives that are built using Angular JS which will return the template files that needs to be used for each event type.
+
+The event types for this POC are the following:
+
+1. Share event - When one of the friends had share a picture on his / her wall.
+2. Post event - When one of the friends posts an update on his/her wall.
+3. Like event - When one of the friends likes a picture / post on his / her wall.
+4. Group event - When one of the friends posts a picture to a specific group.
+
+Technical architecture overview:
+
+The code has been scaffolded and is divided into various modules as described below:
+
+root directory - directory in which the code will be checked out / placed for demo purposes
+ - news_feed - parent level directory in which all JS code is placed
+    - config - configuration / properties file for the application
+ 	- controllers - controller files for the index page
+ 	- css - style sheets applied to the UI widgets / components
+ 	- images - static images that are used in the application
+ 	- json - JSON file containing the hard-coded server side response
+ 	- lib - contains the minified files of the libraries used to build the application
+ 	   -- js - contains the  minified JS files of all the libraries 
+ 	- pages - contains the different pages / views used in the application
+ 	- services - services used for integrating and making the end to end flow
+
+Steps to run the application on a developer's laptop:
+
+Required tools: 
+Command prompt or console or Cygwin terminal
+Node, accessible from command prompt or console or Cygwin terminal
+
+Instructions:
+1.  Download and extract "news_feed.zip" file on the laptop.
+2.  Launch command prompt or console or Cygwin terminal.
+3.  'cd' to the directory in which the ZIP file is extracted.
+4.  Run the web server using the following command 
+    node web-server.js
+5.  The default port in which the application will run to is set to 15637.
+6.  The demo application can be viewed on any browser using the below URL:
+    http://localhost:15637/news_feed/pages/index.html
+
