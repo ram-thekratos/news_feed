@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>News Feeder application</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/app.css" rel="stylesheet" type="text/css" />
+    <script src= "../lib/js/jquery.min.js"></script>
+    <script src= "../lib/js/angular.min.js"></script>
+    <script src= "../lib/js/bootstrap.min.js"></script> 
+    <script src= "../lib/js/ui-bootstrap-tpls-0.3.0.min.js"></script> 
+    <!-- importing the services file -->
+    <script src= "../services/newsFeedServices.js"></script>  
+    <!-- importing the controller file -->
+    <script src= "../controllers/indexCtrl.js"></script> 
+    <!-- importing the properties file -->
+    <script src= "../config/config.js"></script> 
+</head>
+<body>
+ <div ng-app="index_app" ng-controller="indexCtrl">
+  <div class="fixedHeader">
+     <img src="../images/fb_header.PNG">
+  </div>
+  <div class="mainPanel">
+  <div class="left">
+    <img src="../images/fb_navbar.PNG">
+  </div>
+  <div class="center">
+  <div class="panel" id="feedPanel">
+  <div class="panel-body">
+    <!-- This is the dynamic content area of the panel -->
+    <!-- Items will be added to the panel, based on the response from the backend -->
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>

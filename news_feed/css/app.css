@@ -1,0 +1,23 @@
+.left{
+float:left; 
+width: 20%;
+height: 96%;
+position: fixed;
+}
+.center{
+ display: inline-block;
+ width: 30%;
+ margin-left: 20%;
+}
+.fixedHeader{
+ position: fixed;
+ top: 0px;
+ width:100%;
+ height:3.2%;
+}
+.mainPanel{
+ margin-top:3.2%;
+}
+.topMargin{
+ margin-top: 30px;
+}
